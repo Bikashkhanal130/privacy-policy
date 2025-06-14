@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy - Your Extension Name</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background: #f9fafb;
+    color: #333;
+    padding: 20px;
+  }
+  a {
+    color: #0078d7;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+  /* Header */
+  h1 {
+    color: #222;
+    margin-bottom: 0;
+  }
+  .last-updated {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  /* Sections */
+  h2 {
+    margin-top: 40px;
+    color: #0078d7;
+    border-bottom: 2px solid #0078d7;
+    padding-bottom: 6px;
+  }
+  h3 {
+    margin-top: 20px;
+    color: #444;
+  }
+  p, ul {
+    margin-top: 12px;
+    color: #444;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  /* Contact email style */
+  .contact-email {
+    font-weight: 600;
+  }
+  /* Back to top button */
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: none;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  #backToTop:hover {
+    background-color: #005fa3;
+  }
+</style>
+</head>
+<body>
+
+<div class="container" role="main" aria-label="Privacy Policy">
+  <h1>Privacy Policy for <em>Your Extension Name</em></h1>
+  <p class="last-updated"><strong>Last updated:</strong> [Date]</p>
+
+  <p>Thank you for choosing to use <strong>Your Extension Name</strong> (“we”, “our”, or “us”). Your privacy is important to us. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when you use our browser extension.</p>
+
+  <h2>1. Information We Collect</h2>
+
+  <h3>a. Information You Provide</h3>
+  <p>We do not collect any personally identifiable information unless you voluntarily provide it (e.g., contacting us via email).</p>
+
+  <h3>b. Automatically Collected Information</h3>
+  <p>Our extension may collect non-personal data such as usage statistics, error reports, or anonymous analytics to improve functionality and user experience.</p>
+  <p>We do not collect your browsing history, passwords, or personal content.</p>
+
+  <h3>c. Permissions</h3>
+  <p>The extension may request permissions to access certain browser features (e.g., tabs, cookies) only to provide the core functionality of the extension.</p>
+  <p>We do not use these permissions to collect or transmit personal information outside your device.</p>
+
+  <h2>2. How We Use Information</h2>
+  <ul>
+    <li>To provide, maintain, and improve the extension.</li>
+    <li>To fix bugs and troubleshoot issues.</li>
+    <li>To analyze usage patterns to enhance features.</li>
+    <li>We do not sell, rent, or share your data with third parties for marketing.</li>
+  </ul>
+
+  <h2>3. Data Security</h2>
+  <p>We implement reasonable security measures to protect your data from unauthorized access.</p>
+  <p>However, no method of transmission over the Internet or electronic storage is 100% secure.</p>
+
+  <h2>4. Third-Party Services</h2>
+  <p>Our extension may use third-party services or APIs for functionality (e.g., analytics).</p>
+  <p>These services are bound by their own privacy policies.</p>
+
+  <h2>5. Your Choices</h2>
+  <ul>
+    <li>You can disable or remove the extension at any time via your browser’s extension settings.</li>
+    <li>You can clear browser data related to the extension if you wish.</li>
+  </ul>
+
+  <h2>6. Children’s Privacy</h2>
+  <p>Our extension is not intended for children under 13 years of age.</p>
+  <p>We do not knowingly collect personal information from children.</p>
+
+  <h2>7. Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time.</p>
+  <p>When we do, we will update the “Last updated” date.</p>
+  <p>Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>8. Contact Us</h2>
+  <p>If you have any questions or concerns about this Privacy Policy, please contact us at:<br />
+    <span class="contact-email">Email: <a href="mailto:your-email@example.com">your-email@example.com</a></span>
+  </p>
+
+  <p><strong>By using <em>Your Extension Name</em>, you agree to this Privacy Policy.</strong></p>
+</div>
+
+<button id="backToTop" aria-label="Back to top" title="Back to top">&uarr;</button>
+
+<script>
+  // Show "Back to Top" button after scrolling 300px
+  const backToTopBtn = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = 'block';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+
+  // Scroll smoothly to top when button clicked
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+</script>
+
+</body>
+</html>
